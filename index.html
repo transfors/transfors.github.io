@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@200;400&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/584e0fe159.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="FAVICON/1674891743.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <header class="encabezado">
+            <h1>Curriculum Vitae</h1>
+            <p id="cont"></p>
+            <script>
+                fetch('https://randomuser.me/api')
+                    .then(data => data.json())
+                    .then(data => {
+                        console.log(data)
+                        contenido.innerHTML = `${data}`
+                        console.log(data.results['0'])
+                        cont.innerHTML = `
+      <h3><span class="name">Nombre y Apellido: ${data.results['0'].name.first}</span>
+    <span class="apellido"> ${data.results['0'].name.last}</span> </h3>
+     `
+                    })
+            </script>
+            <h3>Licenciatura en Ciencias de la Computacion</h3>
+        </header>
+
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg bg-warning-subtle" data-bs-theme="muted">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="MENU/CV.png" class="logo" alt="logotipo del menu">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#perfil">Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#educacion">Educacion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experiencia">Experiencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#habilidades">Habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#idiomas">Idiomas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#intereses">Intereses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mensajes">Mensajes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <main class="contenido">
+            <h3 id="perfil">Perfil</h3>
+            <br>
+            <p>
+                Desarrollador de software con experiencia en diseño, instalacion, pruebas y mantenimiento de
+                sistemas de
+                software. Dominio de varias plataformas, lenguajes y sistemas integrados. Experiencia en las
+                herramientas y
+                procedimientos de desarrollo mas vanguardistas. Capaz de autogestión eficaz en proyectos
+                independientes.
+                Buenas habilidades de colaboración dentro de un equipo productivo.
+            </p>
+            <br>
+            <h3 id="educacion">Educación</h3>
+            <br>
+            <h4>UBA.Exactas</h4>
+            <ul>
+                <li>1990 - 1995: Licenciatura en Ciencias de la Computación</li>
+                <li>1996 - 2001: Licenciatura en Ciencias de Datos</li>
+            </ul>
+            <br>
+            <h4>UTN.BA - Cursos</h4>
+            <ul>
+                <li>Desarrollo Web en Html5 y Css3</li>
+                <li>Desarrollo web en HTML 5, CSS3 y Javascript</li>
+                <li>PHP y MySQL</li>
+                <li>Python 3</li>
+                <li>Programador Web Avanzado</li>
+            </ul>
+            <!--</ul>-->
+            <br>
+            <h3 id="experiencia">Experiencia</h3>
+            <br>
+            <p><strong>Analista - Programador</strong> (oct 2003 - jun 2012)</p>
+            <ul>
+                <li>Servicios Técnicos IT</li>
+                <li>Toma de requerimientos con el cliente</li>
+                <li>Análisis de requerimientos y diseño de aplicaciones</li>
+                <li>Desarrollo de aplicaciones utilizando Javascript, PHP, MySQL</li>
+                <li>Soporte técnico a clientes</li>
+            </ul>
+            <p><strong>Programador Full Stack</strong> (dic 2014 - oct 2018)</p>
+            <ul>
+                <li>Desarrollo Front End y Back End de aplicaciones con Typescript, Javascript, PHP, MySQL,
+                    HTML5</li>
+                <li>Realización de test de aplicaciones</li>
+                <li>Solución de incidencias</li>
+            </ul>
+            <p><strong>Programadora web</strong> (jul 2011 - dic 2014)</p>
+            <ul>
+                <li>Sistemas Informáticos SL</li>
+                <li>Desarrollo de aplicaciones web para clientes de la empresa del sector financiero utilizando
+                    Javascript,
+                    PHP</li>
+                <li>Mantenimiento de aplicaciones web</li>
+                <li>Maquetación HTML5, CSS3, Bootstrap</li>
+                <li>Manejo de datos XML, JSON</li>
+            </ul>
+        </main>
+
+        <aside class="sidebar">
+            <p class="cont" id="contenido"></p>
+            <script>
+                fetch('https://randomuser.me/api')
+                    .then(data => data.json())
+                    .then(data => {
+                        console.log(data)
+                        contenido.innerHTML = `${data}`
+                        console.log(data.results['0'])
+                        contenido.innerHTML = `
+                        <img src = "${data.results['0'].picture.large}" class="rounded-circle" alt="circle"/> 
+                        <br><br>                
+                        <p class="genero">Género: ${data.results['0'].gender}</p>
+                        <p>Fecha de Nacimiento</p>
+                        <p class="fecha_de_nacimiento"> ${data.results['0'].dob.date}</p>
+                        <p class="edad">Edad: ${data.results['0'].dob.age}</p>
+                        <br>
+                        <h3 id="contacto">Contacto</h3> 
+                        <br>
+                        <span class="calle">Calle: ${data.results['0'].location.street.name}</span>
+                        <span class="numero"> ${data.results['0'].location.street.number}</span>
+                        <p class="ciudad">Ciudad: ${data.results['0'].location.city}</p>
+                        <p class="estado">Estado: ${data.results['0'].location.state}</p>
+                        <p class="pais">País: ${data.results['0'].location.country}</p>
+                        <p class="codigo_postal">Código Postal: ${data.results['0'].location.postcode}</p> 
+                        
+
+                        <span href="contacto.html" class="contacto" target="_blank" rel="noopener"></span>
+                        <span><i class="contacto fa-regular fa-envelope contacto"></i></span>
+                        <span class="email"> ${data.results['0'].email}</span>
+
+                       <br>
+                        <span href="#" class="telefono" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-phone"></i></span>
+                        <span class="tel"> ${data.results['0'].phone}</span>
+                        <br>
+                        <span href="https://www.whatsapp.com" class="whatsapp" target="_blank" rel="noopener">
+                        <i class="whatsapp fa-brands fa-whatsapp"></i></span>
+                        <span class="celular"> ${data.results['0'].cell}</span>
+                     `
+                    })
+            </script>
+            <br>
+            <h3 id="habilidades">Habilidades</h3>
+            <div class="skills">
+                <div class="detalles">
+                    <span><img src="HABILIDADES/piton.png" class="phyton" alt="phyton"></span>
+                    <span>90%</span>
+                </div>
+                <div class="menubarra">
+                    <div id="phyton-menu"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="detalles">
+                    <img src="HABILIDADES/html5.png" class="html5" alt="html5">
+                    <span>75%</span>
+                </div>
+                <div class="menubarra">
+                    <div id="html5-menu"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="detalles">
+                    <img src="HABILIDADES/css-3.png" class="css3" alt="logo css3">
+                    <span>60%</span>
+                </div>
+                <div class="menubarra">
+                    <div id="css3-menu"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="detalles">
+                    <img src="HABILIDADES/js.png" class="javascript" alt="logo javascript">
+                    <span>30%</span>
+                </div>
+                <div class="menubarra">
+                    <div id="js-menu"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="detalles">
+                    <img src="HABILIDADES/php.png" class="php" alt="logo php">
+                    <span>30%</span>
+                </div>
+                <div class="menubarra">
+                    <div id="php-menu"></div>
+                </div>
+            </div>
+            <br>
+            <h3 id="idiomas">Idiomas</h3>
+            <br>
+            <p>Inglés</p>
+
+            <table class="tab">
+                <tr>
+                    <th>
+                        <img src="IDIOMAS/estrellas.png" class="barra" alt="linea">
+                    </th>
+                </tr>
+            </table>
+            <br>
+            <h3 id="redes">Redes Sociales</h3>
+            <br>
+            <table class="tab">
+                <tr>
+                    <th><a href="https://twitter.com" class="twiter" target="_blank" rel="noopener"
+                            aria-label="twitter">
+                            <i class="twitter fa-brands fa-twitter"></i></a></th>
+                    <th><a href="https://www.facebook.com" class="facebook" target="_blank" rel="noopener"
+                            aria-label="facebook">
+                            <i class="facebook fa-brands fa-facebook-f"></i></a></th>
+                    <th><a href="https://www.instagram.com" class="instagram" target="_blank" rel="noopener"
+                            aria-label="instagram">
+                            <i class="instagram fa-brands fa-instagram"></i></a></th>
+                    <th><a href="https://ar.linkedin.com/" class="linkedin" target="_blank" rel="noopener"
+                            aria-label="linkedin">
+                            <i class="linkedin fa-brands fa-linkedin"></i></a></th>
+                </tr>
+            </table>
+            <br>
+            <h3 id="mensajes">Mensajes</h3>
+            <a href="FORM_CONTACTO/contacto.html" class="contacto" target="_blank" rel="noopener"
+                aria-label="contacto"><i class="contacto fa-regular fa-envelope"></i></a>
+        </aside>
+
+        <footer class="pie">
+            <div>
+                <h3 id="intereses">Intereses</h3>
+                <br>
+                <img src="INTERESES/libro-de-lectura.png" alt="imagen lectura">
+                <img src="INTERESES/corriendo.png" alt="imagen deportes">
+                <img src="INTERESES/fotografo.png" alt="imagen fotografía">
+                <img src="INTERESES/nota-musical.png" alt="imagen música">
+                <img src="INTERESES/informatica.png" alt="imagen informática">
+                <img src="INTERESES/avion.png" alt="imagen viajes">
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    
+    <link rel="stylesheet" type="text/css" href="contacto.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@200;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="formulario_contacto">
+        <div class="formulario">
+            <h1>Formulario de Contacto</h1>
+            <form action="#" method="post">
+                <label for="empresa">Empresa</label>
+                <input type="text" name="empresa" placeholder="Empresa" maxlength="50" required id="empresa" autofocus>
+                <br>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Nombre" maxlength="50" required id="nombre">
+                <br>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="Apellido" maxlength="50" required id="apellido">
+                <br>
+                <label for="e-mail">E-mail</label>
+                <input type="email" name="e-mail" placeholder="E-mail" maxlength="50" required id="e-mail">
+                <br>
+                <label for="WhatsApp">WhatsApp</label>
+                <input type="tel" name="whatsApp" placeholder="WhatsApp" maxlength="20" required id="WhatsApp">
+                <br>
+                <label for="pais">País</label>
+                <br>
+                <select name="pais" id="pais">
+                    <option value="argentina">Argentina</option>
+                    
+                    <option value="brasil">Brasil</option>
+                   
+                    <option value="uruguay">EE.UU</option>
+                    
+                    <option value="uruguay">Otros países de América</option>
+                    
+                    <option value="uruguay">Otros países de Europa</option>
+                </select>
+                <br>
+                <span>Mensaje</span>
+              
+                <textarea placeholder="escribir mensaje" name="mensaje" id="mensaje" cols="20" rows="10"></textarea>
+              
+                <button type="submit" name="enviar formulario" id="enviar">Enviar</button>
+            </form>   
+        </div>
+    </div>
+</body>
+</html>

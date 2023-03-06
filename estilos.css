@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Gujarati', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: url(gradiente.png);
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1000px;
+    margin: 5px auto;
+    font-size: 18px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "menu menu menu menu" "sidebar encabezado encabezado encabezado" "sidebar contenido contenido contenido" "sidebar pie pie pie";
+}
+
+.contenedor>div,
+.contenedor .menu,
+.contenedor .encabezado,
+.contenedor .sidebar,
+.contenedor .contenido,
+.contenedor .pie {
+    border-radius: 4px;
+}
+
+.contenedor .encabezado {
+    padding: 20px;
+    grid-column: 2 / 5;
+    margin-top: 95px;
+    text-align: center;
+    grid-area: encabezado;
+    border-radius: 20px;
+}
+
+.contenedor .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    justify-content: space-around;
+    transition: 0.7s;
+    position: fixed;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    grid-area: menu;
+}
+
+.contenedor .contenido {
+    padding: 10px 30px 0 30px;
+    grid-column: 2 / 5;
+    grid-area: contenido;
+}
+
+.contenedor .sidebar {
+    grid-column: 1 / 1;
+    grid-row: 1 / 5;
+    padding: 30px 15px;
+    margin-top: 105px;
+    min-height: 100px;
+    border-radius: 10px;
+    background: rgb(250, 243, 211);
+    grid-area: sidebar;
+}
+
+body aside img {
+    border-radius: 80px;
+}
+
+body aside h3 {
+    text-align: center;
+}
+
+body aside p {
+    text-align: center;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+.contenedor .pie {
+    padding-bottom: 20px;
+    border-radius: 20px;
+    grid-column: 2 / 5;
+    grid-row: 3 / 5;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    grid-area: pie;
+    word-spacing: 5px;
+}
+
+.contacto {
+    font-size: 20px;
+    color: #000;
+}
+
+.whatsapp {
+    font-size: 17px;
+    color: #25D366;
+}
+
+.twitter {
+    font-size: 20px;
+    color: #1DA1F2;
+    letter-spacing: 10px;
+}
+
+.facebook {
+    font-size: 20px;
+    color: #4267B2;
+    letter-spacing: 10px;
+}
+
+.instagram {
+    font-size: 20px;
+    color: #E1306C;
+    letter-spacing: 10px;
+}
+
+.linkedin {
+    font-size: 20px;
+    color: #0e76a8;
+}
+
+.skills:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.detalles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.menubarra {
+    position: relative;
+    border: rgb(29, 104, 104) solid 1px;
+    border-radius: 20px;
+}
+
+.menubarra div {
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: rgb(79, 164, 164);
+}
+
+#phyton-menu {
+    animation: phyton-barra 2s forwards;
+}
+
+@keyframes phyton-barra {
+    100% {
+        width: 90%;
+    }
+}
+
+#html5-menu {
+    animation: html5-barra 2s forwards;
+}
+
+@keyframes html5-barra {
+    100% {
+        width: 75%;
+    }
+}
+
+#css3-menu {
+    animation: css3-barra 2s forwards;
+}
+
+@keyframes css3-barra {
+    100% {
+        width: 60%;
+    }
+}
+
+#js-menu {
+    animation: js-barra 2s forwards;
+}
+
+@keyframes js-barra {
+    100% {
+        width: 50%;
+    }
+}
+
+#php-menu {
+    animation: php-barra 2s forwards;
+}
+
+@keyframes php-barra {
+    100% {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-areas: "menu menu menu menu" "encabezado encabezado encabezado encabezado" "contenido contenido contenido contenido" "sidebar sidebar sidebar sidebar" "pie pie pie pie";
+    }
+}
